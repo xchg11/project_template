@@ -20,7 +20,7 @@ pipeline {
                 sh 'hostname'
             }
         }
-        stage(Third step") {
+        stage("Third step") {
             steps {
                 sh 'uname -a'
             }
