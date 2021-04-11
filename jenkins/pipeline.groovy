@@ -2,9 +2,7 @@
 // commit
 properties([disableConcurrentBuilds()])
 pipeline {
-    agent { 
-        label 'master'
-        }
+    agent any
     options {
         buildDiscarder(logRotator(numToKeepStr: '15', artifactNumToKeepStr: '15'))
         timestamps()
