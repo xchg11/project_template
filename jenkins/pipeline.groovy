@@ -21,7 +21,7 @@ pipeline {
         stage("Third step") {
             steps {
                 sh 'uname -a'
-                sendMail()
+                //sendMail()
             }
         }
     }
