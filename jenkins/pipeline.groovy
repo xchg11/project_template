@@ -1,5 +1,5 @@
 #!groovy
-// commit
+/* commit
 properties([disableConcurrentBuilds()])
 pipeline {
     agent any
@@ -22,6 +22,19 @@ pipeline {
             steps {
                 sh 'uname -a'
                 //sendMail()
+            }
+        }
+    }
+}
+*/
+pipeline {
+    agent {
+        docker { image 'node:15-alpine' }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
             }
         }
     }
