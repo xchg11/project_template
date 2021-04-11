@@ -1,7 +1,5 @@
 #!groovy
 // commit
-@Grab(group = 'com.sun.mail', module = 'javax.mail', version = '1.6.0')
-
 import javax.mail.*
 import javax.mail.internet.*
 
