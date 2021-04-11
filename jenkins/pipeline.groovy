@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Second step") {
             steps {
-                sh 'hostname'
+                sh 'uname -a'
             }
         }
     }
