@@ -1,4 +1,3 @@
-
 #!groovy
 #ts 
 properties([disableConcurrentBuilds()])
